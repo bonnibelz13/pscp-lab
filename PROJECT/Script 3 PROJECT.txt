@@ -1,0 +1,36 @@
+
+
+---------- บรรทัด 325 - 359 ---------------
+function main จะเป็น function หลักที่จะกำหนดค่าของ
+ตัวแปรต่างๆ ซึ่งfunction ในส่วนอื่นๆ จะดึงตัวแปรในfunction mainนี้ 
+ไปใช้งานค่ะ
+
+---------- บรรทัด 361 - 412 ---------------
+ส่วนของ REDRAW WINDOW เป็นfunction ที่ทำการแสดงผลต่างๆ
+WIN.blit(BG_GAME, (0, 0)) คือ แสดงผล Background
+แสดงผล พลังชีวิต WIN.blit(lives_label)
+WIN.blit(score_label) แสดงผล score
+WIN.blit(level_label) แสดงผล level
+heal.draw(WIN) แสดงผล HP_Potion
+boss_items.draw(WIN) แสดงผล boss
+enemy.draw(WIN) แสดงผล enemy
+player.draw(WIN) แสดงผล player
+
+มีส่วนของเงื่อนไขแพ้ ถ้า lost เป็นจริง จะแสดงผลข้อความGAME OVER
+แสดง SCORE 
+กด R เพื่อ restart gameใหม่ กด Q เพื่อออกเกม ค่ะ
+
+---------- บรรทัด 414 - 488 ---------------
+ส่วนของ RUN GAME
+ขณะที่เกม run จะเรียกใช้ function redraw_window
+และขณะเกมรันอยู่ จะมีเงื่อนไขต่างๆ ถ้าเข้าเงื่อนไขพวกนี้ ก็จะมีผลทำให้
+ค่าในตัวแปรต่างๆ ทำงานเปลี่ยนแปลงไป
+มีเงื่อนไข ถ้าพลังชีวิตหมด จะgameover, 
+ถ้ากำจัดEnemy หรือ Boss หมดlevel จะเพิ่ม, 
+ถ้า Boss ตาย จะเล่นเสียงประกอบ
+ถ้า กำจัด enemies หมด score จะเพิ่ม 500 แต้ม
+เงื่อนไข ปล่อย Heal Potion ทุกๆ 2 level
+เงื่อนไขการเกิดของ Enemies ของ Boss
+ประมาณนี้ค่ะ
+
+ขอส่งต่อให้คนต่อไปค่า
