@@ -1,0 +1,27 @@
+''''
+
+def func(x):
+    if x < 0:
+        return False
+    return True
+print(func(1))
+
+
+
+a = True
+b = False
+c = True
+print(not ((a and b) or not (c and a)))
+
+
+
+print(oct(10))
+print(type(oct(10)))
+
+x = int(input())
+if not x < 20:
+    print("True")
+'''
+import math
+
+print(math.floor(10.5))
